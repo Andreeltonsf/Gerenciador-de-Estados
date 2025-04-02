@@ -30,6 +30,7 @@
     "react/jsx-props-no-spreading": "off",
     "no-empty": ["error", { "allowEmptyCatch": true }],
     "react/jsx-no-bind": "off",
+    "no-shadow": "off",
     "import/prefer-default-export": "off",
     "import/extensions": [
       "error",

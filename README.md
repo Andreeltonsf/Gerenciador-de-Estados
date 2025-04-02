@@ -1,27 +1,55 @@
-# React + TypeScript + Vite
+#Criando um Gerenciador de Estados
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## O que é um Gerenciador de Estados?
 
-Currently, two official plugins are available:
+Um Gerenciador de Estados é um componente que gerencia o estado de um aplicativo. Ele é responsável por armazenar e gerenciar o estado do aplicativo, e fornecer uma maneira de acessar e atualizar esse estado.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Como funciona o Gerenciador de Estados?
 
-## Expanding the ESLint configuration
+O Gerenciador de Estados é uma função que recebe um objeto de configuração e retorna um objeto que contém as funções para acessar e atualizar o estado do aplicativo. Essa função é chamada de "Provider" e é responsável por criar o contexto do Gerenciador de Estados.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+O contexto do Gerenciador de Estados é um objeto que contém as funções para acessar e atualizar o estado do aplicativo. Essas funções são chamadas de "hooks" e são usadas para acessar e atualizar o estado do aplicativo.
 
-- Configure the top-level `parserOptions` property like this:
+## O Projeto
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+Este projeto é um exemplo de como criar um Gerenciador de Estados para um aplicativo. Ele usa a biblioteca React e o contexto do React para gerenciar o estado do aplicativo.
+
+Veio da plataforma de Ensino JStack, onde foi ensinado em live como zustand funciona,como criar um Gerenciador de Estados e como usar o contexto do React para gerenciar o estado do aplicativo.
+
+### Link do Projeto
+
+[Link do Projeto](https://github.com/JStackCoders/JStack/tree/main/LIVES/Gerenciador%20de%20Estados/live002)
+
+### Tecnologias
+
+- React
+- TypeScript
+
+### Instalação
+
+Para instalar o projeto, siga os passos abaixo:
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/JStackCoders/JStack.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Entre na pasta do projeto:
+
+```bash
+cd JStack/LIVES/Gerenciador de Estados/live002
+```
+
+3. Instale as dependências:
+
+```bash
+yarn install
+```
+
+4. Execute o projeto:
+
+```bash
+yarn run dev
+```
+
